@@ -27,7 +27,7 @@ npx prisma init
 
 Edit the `.env` file and set your local PostgreSQL connection string. For example:
 
-```json
+```env
 DATABASE_URL="postgresql://YOUR_USER:YOUR_PASSWORD@localhost:5432/YOUR_DB schema=public"
 ```
 
