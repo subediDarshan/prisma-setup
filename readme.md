@@ -28,7 +28,7 @@ npx prisma init
 Edit the `.env` file and set your local PostgreSQL connection string. For example:
 
 ```env
-DATABASE_URL="postgresql://YOUR_USER:YOUR_PASSWORD@localhost:5432/YOUR_DB schema=public"
+DATABASE_URL="postgresql://YOUR_USER:YOUR_PASSWORD@localhost:5432/YOUR_DB?schema=public"
 ```
 
 Replace `YOUR_USER`, `YOUR_PASSWORD`, and `YOUR_DB` with your actual PostgreSQL credentials and database name. The default schema is usually `public` [Connect your database using TypeScript and PostgreSQL](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/connect-your-database-typescript-postgresql).
