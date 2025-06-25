@@ -98,3 +98,7 @@ You can now import and use `prisma` in your Next.js API routes or server compone
 ---
 
 **Note:** Make sure your local PostgreSQL server is running and accessible with the credentials you provided.
+
+## 7. Use Prisma Client in Your App
+[Prisma Client models and CRUD operations](https://www.prisma.io/docs/orm/reference/prisma-client-reference)
+
