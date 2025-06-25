@@ -48,9 +48,10 @@ datasource db {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  name  String?
-  email String  @unique
+  id         Int      @id             @default(autoincrement())
+  name       String?
+  email      String   @unique
+  created_at DateTime @default(now())
 }
 ```
 
