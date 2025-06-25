@@ -94,3 +94,7 @@ You can now import and use `prisma` in your Next.js API routes or server compone
 ## 7. Models and CRUD operations
 [Prisma Client models and CRUD operations](https://www.prisma.io/docs/orm/reference/prisma-client-reference)
 
+
+## 8. Relations
+[Prisma Relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations)
+
