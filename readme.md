@@ -67,15 +67,7 @@ npx prisma migrate dev --name init
 
 [How to use Prisma ORM with Next.js](https://www.prisma.io/docs/guides/nextjs)
 
-## 6. Generate Prisma Client
-
-This is usually done automatically with migrations, but you can also run:
-
-```bash
-npx prisma generate
-```
-
-## 7. Use Prisma Client in Your App
+## 6. Use Prisma Client in Your App
 
 Create a `lib/prisma.ts` file to instantiate Prisma Client:
 
