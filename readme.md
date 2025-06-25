@@ -72,7 +72,7 @@ npx prisma migrate dev --name init
 Create a `lib/prisma.ts` file to instantiate Prisma Client:
 
 ```typescript
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@/generated/prisma'
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient }
 
