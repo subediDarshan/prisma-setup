@@ -91,6 +91,29 @@ You can now import and use `prisma` in your Next.js API routes or server compone
 
 **Note:** Make sure your local PostgreSQL server is running and accessible with the credentials you provided.
 
+## 6. Update eslint.config.mjs file
+```mjs
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const compat = new FlatCompat({
+    baseDirectory: __dirname,
+});
+
+const eslintConfig = [
+    {
+        ignores: ["src/generated/prisma/**"],
+    },
+    ...compat.extends("next/core-web-vitals", "next/typescript"),
+];
+
+export default eslintConfig;
+```
+
 ## 7. Models and CRUD operations
 [Prisma Client models and CRUD operations](https://www.prisma.io/docs/orm/reference/prisma-client-reference)
 
