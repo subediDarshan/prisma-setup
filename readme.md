@@ -91,7 +91,7 @@ You can now import and use `prisma` in your Next.js API routes or server compone
 
 **Note:** Make sure your local PostgreSQL server is running and accessible with the credentials you provided.
 
-## 6. Update eslint.config.mjs file
+## 7. Update eslint.config.mjs file
 ```mjs
 import { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -114,19 +114,24 @@ const eslintConfig = [
 export default eslintConfig;
 ```
 
-## 7. Models and CRUD operations
+## 8. Add this script in package.json
+```mjs
+"postinstall": "prisma generate"
+```
+
+## 9. Models and CRUD operations
 [Prisma Client models and CRUD operations](https://www.prisma.io/docs/orm/reference/prisma-client-reference)
 
 
-## 8. Relations
+## 10. Relations
 [Prisma Relations](https://www.prisma.io/docs/orm/prisma-schema/data-model/relations)
 
-## 9. Searching
+## 11. Searching
 [Prisma text-searching](https://www.prisma.io/docs/orm/prisma-client/queries/full-text-search)
 
-## 10. Filtering and Sorting
+## 12. Filtering and Sorting
 [Prisma filtering-sorting](https://www.prisma.io/docs/orm/prisma-client/queries/filtering-and-sorting)
 
-## 11. Pagination
+## 13. Pagination
 [Prisma pagination](https://www.prisma.io/docs/orm/prisma-client/queries/pagination)
 
